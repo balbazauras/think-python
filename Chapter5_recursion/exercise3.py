@@ -28,3 +28,17 @@ def polyline(t, n, length, angle):
     for i in range(n):
         t.fd(length)
         t.lt(angle)
+# Exercise 5
+bob=turtle.Turtle()
+def koch(turtle,x):
+    arc(turtle,x/3,40)
+    turtle.lt(60)
+    koch(turtle,x/3)
+    turtle.lt(120/3)
+    koch(turtle,x/3)
+    turtle.lt(60)
+    koch(turtle,x/3)
+    if( x<3):
+        turtle.fd(x)
+koch(bob,400)
+turtle.mainloop()
