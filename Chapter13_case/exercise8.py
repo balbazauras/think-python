@@ -14,13 +14,13 @@ def markov(word_list):
     markov_dict=dict()
     suff_dict=dict()
     for i in range(len(word_list)-1):
-
         key = markov_dict[word_list[i]]
         if key in markov_dict:
             markov_dict[key].append(word_list[i])
         else:
             markov_dict[key] = [word_list[i]]
-        index += 1
+        i += 1
+
 
 
 markov(read_to_list(file_name))

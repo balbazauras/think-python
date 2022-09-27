@@ -1,3 +1,6 @@
+
+import pprint
+
 fin = open('Chapter12_tuples/words.txt')
 d=dict()
 

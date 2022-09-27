@@ -21,4 +21,6 @@ def invert_dict(sorted_dict):
     return inverse
 
 read()
+#sorted_dict=sort(d)
+
 pprint.pprint(invert_dict(d))
