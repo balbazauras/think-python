@@ -15,20 +15,20 @@ def arc(t, r, angle):
     n = int(arc_length / 4) + 3
     step_length = arc_length / n
     step_angle = float(angle) / n
-    t.lt(step_angle/2)
+    t.lt(step_angle / 2)
     polyline(t, n, step_length, step_angle)
-    t.rt(step_angle/2)
+    t.rt(step_angle / 2)
 
 
 def internal_polygon(turtle,number_of_sides,length):
-    angle=(number_of_sides-2)*180/number_of_sides
-    radian = 360/number_of_sides*(math.pi/180)
-    side=math.sqrt(length**2+length**2-(2*length*length*math.cos(radian)))
+    angle=(number_of_sides - 2 )* 180 / number_of_sides
+    radian = 360 / number_of_sides*(math.pi / 180)
+    side=math.sqrt(length ** 2 + length ** 2-(2 * length * length * math.cos(radian)))
     for i in range(number_of_sides):
         turtle.fd(length)
-        turtle.lt(180.0-angle/2) 
+        turtle.lt(180.0 - angle / 2) 
         turtle.fd(abs(side))
-        turtle.lt(180.0-angle/2)
+        turtle.lt(180.0 - angle / 2)
         turtle.fd(length)
         turtle.lt(180)
 bob=turtle.Turtle()

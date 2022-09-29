@@ -27,8 +27,7 @@ def has_no_e():
 # if the word doesn’t use any of the forbidden letters.
 def avoids(word,forbidden):
     for symbol in word:
-        for f in forbidden:
-            if(symbol==f):
+        if symbol in forbidden:
                 return True
     return False
 '''
