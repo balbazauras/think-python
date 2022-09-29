@@ -25,7 +25,6 @@ def metathesis_pair():
         if(len(list)>=2):
             print(list)
             for i in range(len(list)-1):
-               
                 count = 0
                 for c1, c2 in zip(list[i], list[i+1]):
                     if c1 != c2:

@@ -6,9 +6,9 @@ def cumsum(num_list):
     the original list. For example:
     '''
     ans=0
+    cumulative_sum=num_list
     for number in num_list:
         ans=ans+number
-    num_list[len(num_list)-1]=ans
-    return num_list
-
+    cumulative_sum.append(ans)
+    return cumulative_sum
 print(str(cumsum(num_list)))

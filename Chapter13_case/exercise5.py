@@ -1,14 +1,12 @@
 import random
 
-
+t=['a','a','b']
 
 def choose_from_hist():
-    d=histogram(t)
-    val=round(random.uniform(0,2))
-    for key, value in d.items():
-        if value==val:
-            return key
-t=['a','a','b']
+    val=round(random.uniform(0,len(t)))
+    print(val)
+    return t[val]
+
 def histogram(s):
     d = dict()
     for c in s:

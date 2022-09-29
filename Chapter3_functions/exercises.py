@@ -13,10 +13,12 @@ def right_justify(s):
     print(" "*num+s)
 right_justify('monty')
 
-#Execercise 2
-# A function object is a value you can assign to a variable or 
-# pass as an argument. For example, do_twice is a function that 
-# takes a function object as an argument and calls it twice
+'''
+Execercise 2
+A function object is a value you can assign to a variable or 
+pass as an argument. For example, do_twice is a function that 
+takes a function object as an argument and calls it twice
+'''
 def do_twice(f,a):
     f(a)
     f(a)
@@ -33,9 +35,12 @@ def do_four(function, argurment):
     do_twice(function,argurment)
 
 do_four(print,'Labas as krabas')
-#Exercise 3
-# This exercise should be done using only the 
-# statements and other features we have learned so far.
+'''
+Exercise 3
+This exercise should be done using only the 
+statements and other features we have learned so far.
+'''
+
 def print_dashes_for2x2(char):
     print(char," "*4,char," "*4,char)
 

@@ -1,7 +1,11 @@
+#exercise 2
+MILES_IN_KILOMETER = 1.61
+minutes=42
+seconds=42
 #convert kilometers to miles
-miles=10/1.61
+miles=10/MILES_IN_KILOMETER
 #convert time given in minutes to seconds
-time=42*60+42
+time=minutes*60+seconds
 #calculate the running pace in time per mile
 pace=time/miles/60
 #average speed in miles per hour

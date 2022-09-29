@@ -50,7 +50,8 @@ def binary_search(cumulative_list,random_value):
 
 word_dict=read_to_dict(file_name)
 cumulative_list=build_list(word_dict)
-indexas =binary_search(cumulative_list,15233)
+random_value=(random.uniform(0,len(word_dict)))
+indexas =binary_search(cumulative_list,random_value)
 key_list=list(word_dict.keys())
 print(key_list[indexas])
 

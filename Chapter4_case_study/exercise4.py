@@ -38,20 +38,25 @@ def arc(turtle,angle,radius):
 
 
 #exercise 1
-counter=0
-def draw(t, length, n):
-    +(+counter)
-    if n == 0:
-        return
-    angle = 50
-    t.fd(length*n)
-    t.lt(angle)
-    draw(t, length, n-1)
-    t.rt(2*angle)
-    draw(t, length, n-1)
-    t.lt(angle)
-    t.bk(length*n)
-draw(bob,100,5)
-turtle.mainloop()
-print(counter)
 
+def main():
+    counter=0
+    def draw(t, length, n):
+        +(+counter)
+        if n == 0:
+            return
+        angle = 50
+        t.fd(length*n)
+        t.lt(angle)
+        draw(t, length, n-1)
+        t.rt(2*angle)
+        draw(t, length, n-1)
+        t.lt(angle)
+        t.bk(length*n)
+    draw(bob,100,5)
+    turtle.mainloop()
+    print(counter)
+
+
+if __name__ == '__main__':
+    main()

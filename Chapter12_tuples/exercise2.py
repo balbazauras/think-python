@@ -20,7 +20,18 @@ def invert_dict(sorted_dict):
             inverse[val].append(key)
     return inverse
 
-read()
-#sorted_dict=sort(d)
+def sort_anagram(d):
+    t = []
+    for v in d.values():
+        if len(v) > 1:
+            t.append((len(v), v))
 
-pprint.pprint(invert_dict(d))
+    t.sort(reverse=True)
+    return t
+
+read()
+
+#pprint.pprint(invert_dict(d))
+pprint.pprint(sort_anagram(invert_dict(d)))
+
+

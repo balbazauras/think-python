@@ -46,9 +46,9 @@ dict_of_words1=read_to_dict(file_name1)
 ditc_of_words2=read_to_dict(file_name2)
 list_of_words1=read_to_list(file_name1)
 list_of_words2=read_to_list(file_name2)
-#sorted_dict=sorted(dict_of_words1.items(), key=lambda x: x[1]) #????
-#pprint.pprint(sorted_dict)
-#print("Total number of words: "+str(count_total(dict_of_words1)))
+sorted_dict=sorted(dict_of_words1.items(), key=lambda x: x[1]) #????
+pprint.pprint(sorted_dict)
+print("Total number of words: "+str(count_total(dict_of_words1)))
 result=compare_lists(list_of_words1,list_of_words2)
 print(result)
 #for word in result[:20]:
